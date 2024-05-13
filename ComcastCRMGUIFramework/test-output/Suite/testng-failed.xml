@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.comcast.crm.generic.ListenerUtility.ListImplementationClass"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.comcast.crm.contesttest.CreateContactTest">
+        <methods>
+          <include name="acConfig"/>
+          <include name="createContactTest"/>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="asConfig"/>
+        </methods>
+      </class> <!-- com.comcast.crm.contesttest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
