@@ -18,6 +18,9 @@ public class HomePage {
 	@FindBy(linkText = "Organizations")
 	private WebElement OrgLink;
 	
+	@FindBy(linkText = "Products")
+	private WebElement productsLink;
+	
 	@FindBy(linkText = "Contacts")
 	private WebElement ContactLink;
 	
@@ -59,6 +62,11 @@ public class HomePage {
 
 	public WebElement getSignout() {
 		return Signout;
+	}
+
+	
+	public WebElement getProductsLink() {
+		return productsLink;
 	}
 
 	public void navigateToCampaignsPage(WebDriver driver)
